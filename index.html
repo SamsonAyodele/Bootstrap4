@@ -193,14 +193,19 @@
                 <h3 class="card-header bg-warning text-white" id="Reserve">Reserve a Table</h3>
                 <div class="card-body">
                     <dl class="row">
-                        <dt class="col-6 col-md-3 mb-1">Number of Guest</dt>
-                        <dd class="col-1"><input class="form-check-input" type="radio" value="option1">1</dd>
-                        <dd class="col-1"><input class="form-check-input" type="radio" value="option2">2</dd>
-                        <dd class="col-1"><input class="form-check-input" type="radio" value="option3">3</dd>
-                        <dd class="col-1"><input class="form-check-input" type="radio" value="option4">4</dd>
-                        <dd class="col-1"><input class="form-check-input" type="radio" value="option5">5</dd>
-                        <dd class="col-1"><input class="form-check-input" type="radio" value="option6">6</dd>
-                        <dt class="col-6 col-md-4 mb-3">Dates and time</dt>
+                        <dt class="col-6 col-md-3 mb-4">Number of Guest</dt>
+                        <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option1">1</dd>
+                        <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option2">2</dd>
+                        <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option3">3</dd>
+                        <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option4">4</dd>
+                        <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option5">5</dd>
+                        <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option6">6</dd>
+                        <dt class="col-6">Section</dt>
+                        <div class="col-sm mb-4 btn-group btn-group-toggle" data-toggle="button">
+                            <button type="radio" class="btn btn-success">Non-smoking</button>
+                            <button type="radio" class="btn btn-danger">Smoking</button>
+                        </div>
+                        <dt class="col-6 col-md-4 mb-5">Dates and time</dt>
                         <div class="col-sm">
                             <input type="text" class="form-control" id="Date" name="Date" placeholder="Date">
                         </div>
@@ -208,6 +213,7 @@
                             <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
                         </div>
                             <div class="offset-1 col-md-10">
+                                <button type="cancel" class="btn btn-secondary">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
