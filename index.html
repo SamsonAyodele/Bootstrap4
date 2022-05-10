@@ -42,7 +42,7 @@
             <!-- Modal content  -->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login </h4>
+                    <h4 class="modal-title">Login</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -84,9 +84,47 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning"
-                    data-toggle="tooltip" data-html="true" title="or call us at <br><strong>+852 12345678</strong>"
-                    data-placement="bottom" href="#Reserve">Reserve Table</a>
+                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"  data-target="#reserveModal">Reserve Table</a>
+                    <!-- data-toggle="tooltip" data-html="true" title="or call us at <br><strong>+852 12345678</strong>"
+                    data-placement="bottom" 
+                </div> -->
+            </div>
+            <div id="reserveModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="content">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h4 class="modal-title">Reserve Table</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>  
+                      <div class="modal-body">
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-6 col-md-3 mb-4">Number of Guest</dt>
+                                <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option1">1</dd>
+                                <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option2">2</dd>
+                                <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option3">3</dd>
+                                <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option4">4</dd>
+                                <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option5">5</dd>
+                                <dd class="col-1"><input class="form-check-input" name="options" type="radio" autocomplete="off" value="option6">6</dd>
+                                <dt class="col-6">Section</dt>
+                                <div class="col-sm mr-4 mb-4 btn-group btn-group-toggle" data-toggle="button">
+                                    <button type="radio" class="btn btn-success">Non-smoking</button>
+                                    <button type="radio" class="btn btn-danger">Smoking</button>
+                                </div>
+                                <dt class="col-6 col-md-4 mb-5">Dates and time</dt>
+                                <div class="col-sm">
+                                    <input type="text" class="form-control" id="Date" name="Date" placeholder="Date">
+                                </div>
+                                <div class="col-sm">
+                                    <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
+                                </div>
+                                    <div class="offset-1 col-md-10">
+                                        <button type="cancel" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Reserve</button>
+                                    </div>
+                                </div>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -267,11 +305,11 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script>
+     <!-- <script>
          $(document).ready(function(){
              $('[data-toggle="tooltip"]').tooltip();
          });
-     </script>
+     </script> -->
 </body>
 
 </html>
